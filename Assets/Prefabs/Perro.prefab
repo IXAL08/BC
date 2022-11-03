@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8505086987777534307}
   - component: {fileID: 8505086987777534304}
-  - component: {fileID: 5920630418434231485}
   - component: {fileID: 8327677898009051511}
+  - component: {fileID: 1055853668303247450}
   m_Layer: 0
   m_Name: Perro
   m_TagString: Enemigo
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e57b3d3b9e602974fb4f3bda27312598, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 905eb7aa1f335d94fb7273d68778592f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,84 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &5920630418434231485
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8505086987777534334}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.9, y: 8.39}
-    newSize: {x: 10.9, y: 8.39}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.05, y: -0.935}
-      - {x: 0.62, y: -0.91499996}
-      - {x: 0.38, y: -0.965}
-      - {x: 0.13, y: -0.875}
-      - {x: 0.089999996, y: -0.695}
-      - {x: 0.03, y: -0.575}
-      - {x: -0.24, y: -0.275}
-      - {x: -0.55, y: -0.055}
-      - {x: -0.81, y: 0.085}
-      - {x: -1.23, y: 0.39499998}
-      - {x: -1.27, y: 0.515}
-      - {x: -1.3199999, y: 0.585}
-      - {x: -1.43, y: 0.585}
-      - {x: -1.52, y: 0.625}
-      - {x: -1.54, y: 0.625}
-      - {x: -1.56, y: 0.59499997}
-      - {x: -1.5999999, y: 0.445}
-      - {x: -1.67, y: 0.415}
-      - {x: -1.77, y: 0.325}
-      - {x: -1.9599999, y: 0.275}
-      - {x: -1.9699999, y: 0.265}
-      - {x: -1.9699999, y: 0.195}
-      - {x: -1.9599999, y: 0.155}
-      - {x: -1.8499999, y: 0.085}
-      - {x: -1.6999999, y: 0.055}
-      - {x: -1.5699999, y: 0.044999998}
-      - {x: -1.5699999, y: -0.114999995}
-      - {x: -1.4599999, y: -0.53499997}
-      - {x: -1.63, y: -0.895}
-      - {x: -1.75, y: -0.98499995}
-      - {x: -1.9399999, y: -1.045}
-      - {x: -1.93, y: -1.115}
-      - {x: -1.8199999, y: -1.165}
-      - {x: -1.75, y: -1.165}
-      - {x: -1.63, y: -1.145}
-      - {x: -1.38, y: -1.105}
-      - {x: -1.3199999, y: -1.0749999}
-      - {x: -1.17, y: -0.92499995}
-      - {x: -1.06, y: -0.79499996}
-      - {x: -0.66999996, y: -0.955}
-      - {x: -0.57, y: -1.015}
-      - {x: -0.69, y: -1.015}
-      - {x: -0.75, y: -1.0749999}
-      - {x: -0.75, y: -1.105}
-      - {x: -0.71999997, y: -1.135}
-      - {x: 0.16, y: -1.135}
-      - {x: 0.45, y: -1.145}
-      - {x: 0.76, y: -1.145}
-      - {x: 0.76, y: -1.165}
-      - {x: 1.0699999, y: -1.165}
-      - {x: 1.31, y: -1.155}
-      - {x: 1.31, y: -1.055}
-      - {x: 1.24, y: -1.005}
 --- !u!114 &8327677898009051511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,3 +101,29 @@ MonoBehaviour:
   speed: 8
   start: 3.5
   end: -32
+--- !u!61 &1055853668303247450
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8505086987777534334}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.07801008, y: 0.013469934}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 10.9, y: 8.39}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6342745, y: 2.0044622}
+  m_EdgeRadius: 0

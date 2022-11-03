@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Magnet : MonoBehaviour
 {
-    
+
     private void OnTriggerStay2D(Collider2D col)
     {
         if (col.gameObject.TryGetComponent<Coin>(out Coin coin))
@@ -13,4 +13,5 @@ public class Magnet : MonoBehaviour
             coin.SetTarget(transform.parent.position);
         }
     }
+    
 }

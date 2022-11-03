@@ -7,11 +7,14 @@ public class Movement : MonoBehaviour
 {
     Rigidbody2D rb;
     private bool isJumping;
+    public float duracion = 5f;
     public GameManager gameManager;
+    public CircleCollider2D RangoIman;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         isJumping = false;
+        RangoIman.enabled = false;
     }
 
     // Update is called once per frame
@@ -35,5 +38,17 @@ public class Movement : MonoBehaviour
         {
             gameManager.GameOver();
         }
+        if (col.CompareTag("Iman"))
+        {
+            StartCoroutine(IPowerup(duracion));
+        }
+    }
+
+    IEnumerator IPowerup(float seconds)
+    {
+        RangoIman.enabled = true;
+        yield return new WaitForSeconds(seconds);
+        RangoIman.enabled = false;
+
     }
 }
