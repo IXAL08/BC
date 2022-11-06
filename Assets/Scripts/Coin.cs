@@ -36,4 +36,12 @@ public class Coin : MonoBehaviour, iCollector
         Targetposition = position;
         hasTarget = true;
     }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

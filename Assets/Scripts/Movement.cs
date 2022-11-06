@@ -42,6 +42,7 @@ public class Movement : MonoBehaviour
         {
             StartCoroutine(IPowerup(duracion));
         }
+        
     }
 
     IEnumerator IPowerup(float seconds)
