@@ -563,12 +563,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectsToSpawn:
+  - {fileID: 86777456398375939, guid: 60e75971e4d490b40bce0a6052d82ad3, type: 3}
   - {fileID: 317596156333382929, guid: ff4feea05d05a3e448032af970adbea0, type: 3}
   - {fileID: 8505086987777534334, guid: 96e0aac0625f04f40bb3b4e09cb821bf, type: 3}
-  - {fileID: 86777456398375939, guid: 60e75971e4d490b40bce0a6052d82ad3, type: 3}
   IsTimer: 1
-  Israndomized: 1
-  TimetoSpawn: 10
+  Israndomized: 0
+  TimetoSpawn: 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +954,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006825988}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 020a4fb4a3ce3734a95d3b32eb4b0673, type: 3}
   m_Name: 
@@ -2011,7 +2011,7 @@ MonoBehaviour:
     - {fileID: 8736208297986174481, guid: 475a9a6790a0a024e9ad3d35894b6bcf, type: 3}
     - {fileID: 6599623513283713785, guid: d6c1e1c07f725144e8b791fdd1936a3e, type: 3}
     - {fileID: 2195712208996599137, guid: b154e0c6541a36d4c8a79ed635b9995e, type: 3}
-    spawnInterval: 10
+    spawnInterval: 5
   spawnPoints:
   - {fileID: 1925974165}
   - {fileID: 235745556}

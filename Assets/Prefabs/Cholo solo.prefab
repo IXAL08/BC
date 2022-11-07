@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8468008130975927395}
   - component: {fileID: 4195848165932819949}
   - component: {fileID: 8318414071443421215}
+  - component: {fileID: 3436519689186416728}
+  - component: {fileID: 8174899888866417816}
   m_Layer: 0
   m_Name: Cholo solo
   m_TagString: Enemigo
@@ -111,3 +113,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9296074, y: 4.0014997}
   m_EdgeRadius: 0
+--- !u!114 &3436519689186416728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86777456398375939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd4f077fde806a45be3fe2518e75470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3.5
+  start: 3.5
+  end: -32
+--- !u!95 &8174899888866417816
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86777456398375939}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73ffa93477c73294a978f18658dcafdc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
