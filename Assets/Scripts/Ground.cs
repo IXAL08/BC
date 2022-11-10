@@ -18,7 +18,7 @@ public class Ground : MonoBehaviour
         transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
         if (transform.position.x <= end)
         {
-            if (gameObject.CompareTag("Enemigo")||gameObject.CompareTag("Item")||gameObject.CompareTag("Iman")||gameObject.CompareTag("Moneda"))
+            if (gameObject.CompareTag("Enemigo")||gameObject.CompareTag("Item")||gameObject.CompareTag("Iman")||gameObject.CompareTag("Moneda")||gameObject.CompareTag("Paracetamol"))
             {
                 Destroy(gameObject);
             }

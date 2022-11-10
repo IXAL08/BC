@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8318414071443421215}
   - component: {fileID: 3436519689186416728}
   - component: {fileID: 8174899888866417816}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cholo solo
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.71624136, y: 0.07604766}

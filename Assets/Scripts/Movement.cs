@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -10,11 +11,13 @@ public class Movement : MonoBehaviour
     public float duracion = 5f;
     public GameManager gameManager;
     public CircleCollider2D RangoIman;
+    public CircleCollider2D RangoCollector;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         isJumping = false;
         RangoIman.enabled = false;
+        RangoCollector.enabled = false;
     }
 
     // Update is called once per frame
@@ -34,10 +37,6 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "Enemigo")
-        {
-            gameManager.GameOver();
-        }
         if (col.CompareTag("Iman"))
         {
             StartCoroutine(IPowerup(duracion));
@@ -45,11 +44,21 @@ public class Movement : MonoBehaviour
         
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemigo"))
+        {
+            gameManager.GameOver();
+        }
+    }
+
     IEnumerator IPowerup(float seconds)
     {
         RangoIman.enabled = true;
+        RangoCollector.enabled = true;
         yield return new WaitForSeconds(seconds);
         RangoIman.enabled = false;
+        RangoCollector.enabled = false;
 
     }
 }

@@ -8,15 +8,16 @@ TagManager:
   - Iman
   - Item
   - Moneda
+  - Paracetamol
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
+  - Enemigo
+  - Paracetamol
   - 
   - 
   - 

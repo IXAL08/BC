@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8327677898009051511}
   - component: {fileID: 1055853668303247450}
   - component: {fileID: 7439208849447225409}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Perro
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.07801008, y: 0.013469934}
