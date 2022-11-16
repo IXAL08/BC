@@ -7,6 +7,7 @@ public class Ground : MonoBehaviour
 {
     public float speed, start, end;
     private bool acelerar = true;
+    public float distance = 0;
     void Start()
     {
         
@@ -32,6 +33,10 @@ public class Ground : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        distance += speed * Time.fixedDeltaTime;
+        
+        
         if (acelerar && speed <= 40)
         {
             speed += 0.1f;
