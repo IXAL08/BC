@@ -22,6 +22,11 @@ public class Score : MonoBehaviour
             monedas++;
             monedatexto.text = "= " + monedas;
         }
+        if (col.gameObject.tag == "Item")
+        {
+            monedas += 10;
+            monedatexto.text = "= " + monedas;
+        }
     }
 
     // Update is called once per frame

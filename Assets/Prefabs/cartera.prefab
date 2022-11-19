@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1801938705614621688}
   - component: {fileID: 1071736409702226517}
   - component: {fileID: 4315967092924056877}
+  - component: {fileID: 7055729043312137252}
   m_Layer: 0
   m_Name: cartera
   m_TagString: Item
@@ -101,6 +102,7 @@ MonoBehaviour:
   speed: 5
   start: 3.5
   end: -32
+  distance: 0
 --- !u!61 &4315967092924056877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,3 +129,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1003308, y: 1.0395913}
   m_EdgeRadius: 0
+--- !u!114 &7055729043312137252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2195712208996599137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7e581d7e364be438e799617491ab15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -7,7 +7,7 @@ public class Wave
     
     
     public GameObject[] typeOfEnemies;
-    public float spawnInterval;
+    public float spawnInterval = 10;
 }
 
 public class ItemSpawner : MonoBehaviour
