@@ -8,7 +8,7 @@ public class Parallax : MonoBehaviour
    public float depth = 1;
    
    Ground  velocity;
-
+   public int regreso;
    private void Awake()
    {
        velocity = GameObject.Find("Ground").GetComponent<Ground>();
@@ -27,9 +27,9 @@ public class Parallax : MonoBehaviour
         Vector2 pos = transform.position;
 
         pos.x -= realVelocity * Time.fixedDeltaTime;
-        if (pos.x <= -11)
+        if (pos.x <= -18)
         {
-            pos.x = 11;
+            pos.x = regreso;
         }
 
         transform.position = pos;

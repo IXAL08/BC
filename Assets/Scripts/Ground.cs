@@ -34,7 +34,7 @@ public class Ground : MonoBehaviour
     private void FixedUpdate()
     {
 
-        distance += speed * Time.fixedDeltaTime;
+        
         
         
         if (acelerar && speed <= 40)
@@ -44,12 +44,18 @@ public class Ground : MonoBehaviour
         else
         {
             acelerar = false;
-            speed -= 0.01f;
+            speed -= 0.03f;
+            distance += speed * Time.fixedDeltaTime;
         }
 
         if (speed <= -0.1)
         {
             speed = 0;
+        }
+
+        if (speed >= 50)
+        {
+            speed = 49;
         }
     }
 }
