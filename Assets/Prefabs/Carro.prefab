@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 17
   m_Sprite: {fileID: 1324137569, guid: 65404e90434061449b7204a8d5b2dc31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -187,3 +187,5 @@ MonoBehaviour:
   speed: 20
   start: 3.5
   end: -32
+  acelerar: 1
+  distance: 0

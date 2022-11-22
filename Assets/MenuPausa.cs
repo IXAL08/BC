@@ -34,8 +34,8 @@ public class MenuPausa : MonoBehaviour
 
    public void Cerrar()
    {
-      Debug.Log("Volviendo a menu");
-      Application.Quit();
+      Time.timeScale = 1;
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
    }
    
 }

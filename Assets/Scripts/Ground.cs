@@ -6,7 +6,7 @@ using UnityEngine;
 public class Ground : MonoBehaviour
 {
     public float speed, start, end;
-    private bool acelerar = true;
+    public bool acelerar = true;
     public float distance = 0;
     void Start()
     {

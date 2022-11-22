@@ -12,9 +12,5 @@ public class MenuOpciones : MonoBehaviour
     {
         audioMixer.SetFloat("Volumen", volumen);
     }
-
-    public void CambiarCalidad(int index)
-    {
-        QualitySettings.SetQualityLevel(index);
-    }
+    
 }

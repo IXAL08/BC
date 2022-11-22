@@ -9,7 +9,6 @@ public class Movement : MonoBehaviour
     Rigidbody2D rb;
     private bool isJumping;
     public float duracion = 5f;
-    public GameManager gameManager;
     public CircleCollider2D RangoIman;
     public CircleCollider2D RangoCollector;
     void Start()
@@ -48,7 +47,7 @@ public class Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemigo"))
         {
-            gameManager.GameOver();
+            
         }
     }
 
