@@ -5,11 +5,17 @@ using System;
 
 public class Coin : MonoBehaviour, iCollector
 {
+    public Ground velocidad;
     public static event Action OnCoinCollected;
     private Rigidbody2D rb;
     private bool hasTarget;
     private Vector3 Targetposition;
     public float moveSpeed = 5;
+
+    public void Start()
+    {
+        velocidad = GameObject.Find("Ground").GetComponent<Ground>();
+    }
 
     private void Awake()
     {
@@ -41,6 +47,7 @@ public class Coin : MonoBehaviour, iCollector
     {
         if (col.CompareTag("Player"))
         {
+            velocidad.speed += 1;
             Destroy(gameObject);
         }
     }

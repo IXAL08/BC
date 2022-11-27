@@ -11,12 +11,14 @@ public class Movement : MonoBehaviour
     public float duracion = 5f;
     public CircleCollider2D RangoIman;
     public CircleCollider2D RangoCollector;
+    public SpriteRenderer sprite;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         isJumping = false;
         RangoIman.enabled = false;
         RangoCollector.enabled = false;
+        sprite.enabled = false;
     }
 
     // Update is called once per frame
@@ -55,7 +57,9 @@ public class Movement : MonoBehaviour
     {
         RangoIman.enabled = true;
         RangoCollector.enabled = true;
+        sprite.enabled = true;
         yield return new WaitForSeconds(seconds);
+        sprite.enabled = false;
         RangoIman.enabled = false;
         RangoCollector.enabled = false;
 

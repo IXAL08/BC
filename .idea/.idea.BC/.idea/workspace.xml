@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b884221-05a1-4123-a41d-9c5d97f25f66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ground.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax.cs" afterDir="false" />
-    </list>
+    <list default="true" id="3b884221-05a1-4123-a41d-9c5d97f25f66" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +78,7 @@
       <workItem from="1668895092393" duration="357000" />
       <workItem from="1669075711378" duration="2592000" />
       <workItem from="1669078460858" duration="430000" />
+      <workItem from="1669569480251" duration="3545000" />
     </task>
     <servers />
   </component>
