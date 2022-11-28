@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     public CircleCollider2D RangoIman;
     public CircleCollider2D RangoCollector;
     public SpriteRenderer sprite;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,6 +30,7 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector3(0, 20,0);
             isJumping = true;
         }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -44,14 +46,7 @@ public class Movement : MonoBehaviour
         }
         
     }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemigo"))
-        {
-            
-        }
-    }
+    
 
     IEnumerator IPowerup(float seconds)
     {

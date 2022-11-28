@@ -6,9 +6,9 @@ using UnityEngine;
 public class CombateJugador : MenuGameOver
 {
     public event EventHandler MuerteJugador;
-    private Ground velocidad;
     
-
+    
+    
     public  void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemigo"))

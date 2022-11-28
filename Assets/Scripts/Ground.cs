@@ -8,6 +8,7 @@ public class Ground : MonoBehaviour
     public float speed, start, end;
     public bool acelerar = true;
     public float distance = 0;
+    
     void Start()
     {
         
